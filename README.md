@@ -1,4 +1,4 @@
-# Query Builders/ORM Benchmarks
+# ORM Benchmarks
 Benchmarks between Eloquent ORM, Laravel's Query Builder, Hydro and PDO.
 
 ### Run

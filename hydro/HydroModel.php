@@ -11,7 +11,7 @@ class HydroModel extends TestSuite
 
     public function initialize()
     {
-        $loader = require_once dirname(__FILE__) . '/../../Hydro/vendor/autoload.php';
+        $loader = require_once dirname(__FILE__) . '/vendor/autoload.php';
 
         $this->con = new PDO('sqlite::memory:');
         $this->hydro = new Hydro\Hydro($this->con);
@@ -29,7 +29,7 @@ class HydroModel extends TestSuite
 
     public function runInsertTag($i)
     {
-        $tag = $this->tagModel->query()
+        $tag = $this->tagModel->table()
             ->insert([
                 'name' => 'Tag' . $i,
             ])->execute();
@@ -38,7 +38,7 @@ class HydroModel extends TestSuite
 
     public function runInsertPost($i)
     {
-        $post = $this->postModel->query()
+        $post = $this->postModel->table()
             ->insert([
                 'title' => 'Hello' . $i,
                 'content' => 'Hello World',
@@ -51,12 +51,12 @@ class HydroModel extends TestSuite
 
     public function runSelect($i)
     {
-        $this->postModel->query()->one();
+        $this->postModel->table()->one();
     }
 
     public function runWhere($i)
     {
-        $this->postModel->query()
+        $this->postModel->table()
              ->where('post.title', 'Hello' . $i)
              ->orWhere('post.author_name', 'John' . $i)
              ->where(function ($q) {
@@ -67,7 +67,7 @@ class HydroModel extends TestSuite
 
     public function runHydrate($i)
     {
-        $posts = $this->postModel->query()
+        $posts = $this->postModel->table()
              ->where('title', 'Hello' . $i)
              ->get();
 
@@ -77,7 +77,7 @@ class HydroModel extends TestSuite
 
     public function runJoin($i)
     {
-        $posts = $this->postModel->query()
+        $posts = $this->postModel->table()
                       ->limit(1)
                       ->one();
     }

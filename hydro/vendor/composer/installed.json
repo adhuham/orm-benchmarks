@@ -1,0 +1,58 @@
+{
+    "packages": [
+        {
+            "name": "adhuham/hydro",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adhuham/hydro.git",
+                "reference": "5638ff0108d6ef54db5dbe4defe4b3e7c1d543bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adhuham/hydro/zipball/5638ff0108d6ef54db5dbe4defe4b3e7c1d543bf",
+                "reference": "5638ff0108d6ef54db5dbe4defe4b3e7c1d543bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "time": "2021-04-28T11:03:19+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "Hydro\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Adhuham",
+                    "email": "hello@adhuham.com",
+                    "homepage": "https://adhuham.com/",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Fast and lightweight Query Builder",
+            "homepage": "https://adhuham.com/",
+            "keywords": [
+                "mysql",
+                "php",
+                "query-builder"
+            ],
+            "support": {
+                "issues": "https://github.com/adhuham/hydro/issues",
+                "source": "https://github.com/adhuham/hydro/tree/master"
+            },
+            "install-path": "../adhuham/hydro"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

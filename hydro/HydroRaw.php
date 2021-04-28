@@ -8,7 +8,7 @@ class HydroRaw extends TestSuite
 
     public function initialize()
     {
-        require_once dirname(__FILE__) . '/../../Hydro/vendor/autoload.php';
+        require_once dirname(__FILE__) . '/vendor/autoload.php';
 
         $this->con = new PDO('sqlite::memory:');
         $this->hydro = new Hydro\Hydro($this->con);

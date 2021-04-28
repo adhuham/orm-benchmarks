@@ -148,4 +148,7 @@ m=278,584  Hydro (using Raw queries)
 
 m=138,688  RawPdo                                            
 =
+
+Lenovo ThinkPad x390, Core i5 8th Gen with 6GB Memory
+Linux 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 GNU/Linux
 ```

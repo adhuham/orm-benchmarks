@@ -151,6 +151,11 @@ m=278,584  Hydro (using Raw queries)
 m=138,688  RawPdo                                            
 =
 
-Lenovo ThinkPad x390, Core i5 8th Gen with 6GB Memory
-Linux 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 GNU/Linux
+Hardware: Lenovo ThinkPad x390, Core i5 8th Gen with 6GB Memory
+OS: Linux 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 GNU/Linux
+PHP: PHP 8.0.3 (cli) (built: Mar  5 2021 08:38:30) ( NTS )
+Copyright (c) The PHP Group
+Zend Engine v4.0.3, Copyright (c) Zend Technologies
+    with Zend OPcache v8.0.3, Copyright (c), by Zend Technologies
+MySQL: mysql  Ver 8.0.23 for Linux on x86_64 (MySQL Community Server - GPL)
 ```
